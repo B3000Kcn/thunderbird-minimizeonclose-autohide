@@ -1,0 +1,30 @@
+{
+  "manifest_version": 2,
+  "applications": {
+    "gecko": {
+      "id": "minimizeonclose-autohide@B3000Kcn.github.io",
+      "strict_min_version": "128.0",
+      "strict_max_version": "140.*"
+    }
+  },
+  "name": "Minimize on Close with Auto Hide",
+  "description": "rsjtdrjgfuzkfg/thunderbird-minimizeonclose with auto-hide on startup.",
+  "version": "2.0.2.0.1",
+  "author": "B3000Kcn",
+  "icons": {
+    "64": "icon.png"
+  },
+  "background": {
+    "scripts": ["background.js"]
+  },
+  "experiment_apis": {
+    "ex_windows": {
+      "schema": "experiment.json",
+      "parent": {
+        "scopes": ["addon_parent"],
+        "paths": [["ex_windows"]],
+        "script": "experiment.js"
+      }
+    }
+  }
+}
